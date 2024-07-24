@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HOTEL Queen'S</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="head-top">
+        <div class="site-name">
+          <span>Queen's</span>
+        </div>
+        <div class="site-nav">
+          <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+        </div>
+      </div>
+
+      <div class="head-bottom flex">
+        <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+        <p>
+          The full hotel descriptive data feed includes hotel property
+          information such as hotel chain, property attributes and amenities,
+          hotel policy, property information, property rating, room description,
+          location and area information, facilities information, award
+          information and more.
+        </p>
+        <button type="button" class="head-btn">GET STARTED</button>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times"></i>
+      </span>
+
+      <ul class="navbar">
+        <li><a href="#header">home</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#rooms">rooms</a></li>
+        <li><a href="#customers">customers</a></li>
+      </ul>
+      <button class="btn sign-up">sign up</button>
+      <button class="btn log-in">log in</button>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+      <div class="title">
+        <h2>services</h2>
+      </div>
+      <div class="services-container">
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-utensils"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Food Service/ Food Runner</h2>
+            <p>
+              Distributes and serves meals, beverages, and snacks. Prepares
+              dining areas for the serving of meals and sets up serving lines.
+              Cleans dining, service, and food preparation areas. Cleans and
+              sterilizes dishes, kitchen utensils, and equipment.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-swimming-pool"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Refreshment</h2>
+            <p>
+              A refreshing bath or drink makes you feel energetic or cool again
+              after you have been tired or hot. Herbs have been used for
+              centuries to make refreshing drinks. Synonyms: stimulating, fresh,
+              cooling, bracing More Synonyms of refreshing.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-broom"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Housekeeping</h2>
+            <p>
+              Cleaning is the process of removing unwanted substances, such as
+              dirt, infectious agents, and other impurities, from an object or
+              environment.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-door-closed"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Room Security</h2>
+            <p>
+              Room service or in-room dining is a hotel service enabling guests
+              to choose items of food and drink for delivery to their hotel room
+              for consumption. Room service is organized as a subdivision within
+              the food and beverage department of high-end hotel and resort
+              properties.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+
+    <div class="book">
+      <form class="book-form">
+        <div class="form-item">
+          <label for="checkin-date">Check In Date: </label>
+          <input type="date" id="chekin-date" />
+        </div>
+        <div class="form-item">
+          <label for="checkout-date">Check Out Date: </label>
+          <input type="date" id="chekout-date" />
+        </div>
+        <div class="form-item">
+          <label for="adult">Adults: </label>
+          <input type="number" min="1" value="1" id="adult" />
+        </div>
+        <div class="form-item">
+          <label for="children">Children: </label>
+          <input type="number" min="1" value="1" id="children" />
+        </div>
+        <div class="form-item">
+          <label for="rooms">Rooms: </label>
+          <input type="number" min="1" value="1" id="rooms" />
+        </div>
+        <div class="form-item">
+          <input type="submit" class="btn" value="Book Now" />
+        </div>
+      </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+      <div class="title">
+        <h2>rooms</h2>
+      </div>
+      <div class="rooms-container">
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/img1.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Luxury Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus exercitationem repellendus maxime ullam tempore
+              architecto provident unde expedita quam beatae, dolore eligendi
+              molestias sint tenetur incidunt voluptas. Unde corporis qui iusto
+              vitae. Aut nesciunt id iste, cum esse commodi nemo?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi
+              dicta laborum beatae ratione doloremque. Delectus odio sit eius
+              labore, atque quo?
+            </p>
+            <p class="rate"><span>Rs.8000.00 /</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/img2.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Luxury Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus exercitationem repellendus maxime ullam tempore
+              architecto provident unde expedita quam beatae, dolore eligendi
+              molestias sint tenetur incidunt voluptas. Unde corporis qui iusto
+              vitae. Aut nesciunt id iste, cum esse commodi nemo?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi
+              dicta laborum beatae ratione doloremque. Delectus odio sit eius
+              labore, atque quo?
+            </p>
+            <p class="rate"><span>Rs.15000.00 /</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/img3.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Luxury Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus exercitationem repellendus maxime ullam tempore
+              architecto provident unde expedita quam beatae, dolore eligendi
+              molestias sint tenetur incidunt voluptas. Unde corporis qui iusto
+              vitae. Aut nesciunt id iste, cum esse commodi nemo?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi
+              dicta laborum beatae ratione doloremque. Delectus odio sit eius
+              labore, atque quo?
+            </p>
+            <p class="rate"><span>Rs.12500.00 /</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+      </div>
+    </section>
+
+    <section class="customers" id="customers">
+      <div class="sec-width">
+        <div class="title">
+          <h2>customers</h2>
+        </div>
+        <div class="customers-container">
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>We Loved it</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              beatae veritatis provident eveniet praesentium veniam cum iusto
+              distinctio esse, vero est autem, eius optio cupiditate?
+            </p>
+            <img src="images/cus1.jpeg" alt="customer image" />
+            <span>Customer Name, Country</span>
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Comfortable Living</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              beatae veritatis provident eveniet praesentium veniam cum iusto
+              distinctio esse, vero est autem, eius optio cupiditate?
+            </p>
+            <img src="images/cus2.jpeg" alt="customer image" />
+            <span>Customer Name, Country</span>
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Nice Place</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              beatae veritatis provident eveniet praesentium veniam cum iusto
+              distinctio esse, vero est autem, eius optio cupiditate?
+            </p>
+            <img src="images/cus3.jpeg" alt="customer image" />
+            <span>Customer Name, Country</span>
+          </div>
+          <!-- end of single customer -->
+        </div>
+      </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            sapiente mollitia doloribus provident? Eos quisquam aliquid vel
+            dolorum, impedit culpa.
+          </p>
+          <ul class="social-icons">
+            <li class="flex">
+              <i class="fa fa-twitter fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-facebook fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-instagram fa-2x"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Useful Links</h2>
+          <a href="#">Blog</a>
+          <a href="#">Rooms</a>
+          <a href="#">Subscription</a>
+          <a href="#">Gift Card</a>
+        </div>
+
+        <div>
+          <h2>Privacy</h2>
+          <a href="#">Career</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
+
+        <div>
+          <h2>Have A Question</h2>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span> 203 Dharmapala rd ,Kandy , Srilanka </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span> +9481 234 5463 </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span> info@queens.com </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
